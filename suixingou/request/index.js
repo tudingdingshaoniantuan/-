@@ -6,7 +6,7 @@ let requestTimes = 0;
 export const request = function (params) {
   return new Promise((resolve, reject) => {
     wx.showLoading({
-      title: '拼了老命加载中',
+      title: '拼命加载中',
     });
     requestTimes++;
     wx.request({

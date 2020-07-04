@@ -37,6 +37,7 @@
     <view class="order">
       <view class="title">我的订单</view>
       <view class="content">
+        
         <view class="order_item">
           <text class="iconfont icon-6"></text>
           <view class="text">全部订单</view>
@@ -58,25 +59,31 @@
     <!-- 订单END -->
 
     <!-- 收货地址 -->
-    <view class="address">
-      <view>管理收货地址</view>
-      <view>></view>
-    </view>
+<view class="address">
+  <button wx:if="{{!address}}" type="default" bindtap="handleChooseAddress">管理收货地址</button>
+  <view>></view>
+</view>
+
     <!-- 收货地址END -->
 
     <!-- 联系 -->
     <view class="contact">
+      <view class="contact_item" bindtap="tiao3">
+        <view>登录</view>
+        <view>></view>
+      </view>
       <view class="contact_item">
         <view>联系客服</view>
-        <view id="phone">400-618-4000</view>
+        <button open-type="contact"></button> <!-- 客服 -->
       </view>
       <view class="contact_item">
         <view>意见反馈</view>
-        <view>></view>
+        <button open-type="feedback"></button> <!-- 反馈 -->
+
       </view>
       <view class="contact_item">
         <view>关于我们</view>
-        <view>></view>
+        <button open-type="launchApp"></button> <!-- 反馈 -->
       </view>
     </view>
     <!-- 联系END -->
@@ -84,7 +91,8 @@
     <!-- 推荐 -->
     <view class="recommend">
       <view>把应用推荐给其他人</view>
-      <view>></view>
+      <button open-type="share"></button> <!-- 分享 -->
+
     </view>
     <!-- 推荐END -->
   </view>

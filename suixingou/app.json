@@ -17,7 +17,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff2d4a",
-    "navigationBarTitleText": "啊哈小商城",
+    "navigationBarTitleText": "随心购",
     "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",

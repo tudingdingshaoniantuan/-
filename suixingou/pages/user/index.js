@@ -6,6 +6,12 @@ Page({
     collectionNum: 0
   },
 
+  tiao3:function(){
+    wx.navigateTo({
+      url: '/pages/login/index',
+    })
+  },
+
   onShow: function () {
     const userInfo = wx.getStorageSync('UserInfo') || {};
     const collection = wx.getStorageSync('Collection') || [];
