@@ -1,0 +1,1 @@
+<button type="default" bindtap="openMap">打开地图</button>
